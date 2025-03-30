@@ -4,7 +4,7 @@
       <div class="hero-text">
         <h1 ref="heading">
           <span class="greeting">Bonjour, je suis</span>
-          <span class="name">Koffi Tito-Antonio ANDELE</span>
+          <span class="name">Koffi Tito-Antonio Andele</span>
           <span class="title">Développeur Web & Mobile</span>
         </h1>
         <p ref="description">Développeur FullStack spécialisé en Vue.js, Flutter et Node.js, avec une passion pour créer des expériences numériques innovantes et performantes.</p>

@@ -9,7 +9,7 @@
       </div>
       
       <div class="about-content">
-        <h3 ref="aboutHeading">Koffi Tito-Antonio ANDELE</h3>
+        <h3 ref="aboutHeading">Koffi Tito-Antonio Andele</h3>
         <p ref="aboutText">Développeur Web & Mobile polyvalent, spécialisé en développement FullStack avec expertise en Vue.js, Node.js, Flutter et gestion de projets. Expérience confirmée en conception d'applications, optimisation des performances et coordination d'équipes techniques. Passionné par l'innovation et l'amélioration continue des solutions numériques.</p>
         
         <div class="skills-tags">
