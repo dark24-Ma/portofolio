@@ -10,12 +10,12 @@
           @click="activeCategory = category.id"
           :class="{ active: activeCategory === category.id }"
           ref="categories">
-          {{ category.name }}
+          <!-- {{ category.name }} -->
         </div>
       </div>
       
       <div class="skills-content">
-        <div class="skills-list" ref="skillsList">
+        <!-- <div class="skills-list" ref="skillsList">
           <div class="skill-item" 
             v-for="(skill, index) in filteredSkills" 
             :key="index"
@@ -28,7 +28,7 @@
               <div class="skill-percentage" :style="{ width: '0%' }" :data-width="skill.level + '%'"></div>
             </div>
           </div>
-        </div>
+        </div> -->
         
         <div class="skills-visual" ref="skillsVisual">
           <div class="technologies-cloud">

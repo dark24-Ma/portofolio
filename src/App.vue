@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Hero />
-    <About />
-    <Skills />
     <Projects />
+    <Skills />
+    <About />
     <Contact />
   </div>
 </template>

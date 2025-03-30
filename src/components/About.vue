@@ -12,7 +12,7 @@
         <h3 ref="aboutHeading">Koffi Tito-Antonio Andele</h3>
         <p ref="aboutText">Développeur Web & Mobile polyvalent, spécialisé en développement FullStack avec expertise en Vue.js, Node.js, Flutter et gestion de projets. Expérience confirmée en conception d'applications, optimisation des performances et coordination d'équipes techniques. Passionné par l'innovation et l'amélioration continue des solutions numériques.</p>
         
-        <div class="skills-tags">
+        <!-- <div class="skills-tags">
           <span class="skill-tag">PHP</span>
           <span class="skill-tag">TypeScript</span>
           <span class="skill-tag">Dart</span>
@@ -25,7 +25,7 @@
           <span class="skill-tag">MySQL</span>
           <span class="skill-tag">Firebase</span>
           <span class="skill-tag">MongoDB</span>
-        </div>
+        </div> -->
         
         <div class="about-stats" ref="statsContainer">
           <div class="stat-item" v-for="(stat, index) in stats" :key="index" ref="statItems">
