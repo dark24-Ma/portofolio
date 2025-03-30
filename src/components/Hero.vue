@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="scroll-indicator" ref="scrollIndicator" @click="scrollToSection('about')">
-      <span>Scroll</span>
+      <span>Scroller</span>
       <div class="mouse">
         <div class="wheel"></div>
       </div>
