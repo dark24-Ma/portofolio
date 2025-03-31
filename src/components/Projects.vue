@@ -107,6 +107,15 @@ export default {
       projects: [
         {
           id: 1,
+          title: 'DogeChan',
+          description: 'DogeChan est une application web3, qui permet de créer, transférer et échanger les WDoge de la blockchain Dogechain.',
+          image: require('@/assets/images/dogchan.png'),
+          github: 'https://ondoge.vercel.app/',
+          category: 'Web',
+          technologies: ['Vue.js', 'Blockchain', 'Dogechain']
+        },
+        {
+          id: 2,
           title: 'Portfolio Animé',
           description: 'Portfolio personnel avec des animations GSAP avancées et un design moderne.',
           image: require('@/assets/images/portofolio.png'),
@@ -115,7 +124,7 @@ export default {
           technologies: ['Vue.js', 'GSAP']
         },
         {
-          id: 2,
+          id: 3,
           title: 'Consulting Landing Page',
           description: 'Landing page pour un cabinet de conseil en management.',
           image: require('@/assets/images/irama.png'),
@@ -124,7 +133,7 @@ export default {
           technologies: ['Vue.js', 'GSAP']
         },
         {
-          id: 3,
+          id: 4,
           title: 'DS Education Dashboard (En cours de développement)',
           description: 'Application Web de gestion de formation PDF, Vidéo, Newsletter, Abonnement .',
           image: require('@/assets/images/education.png'),
@@ -133,7 +142,7 @@ export default {
           technologies: ['VueJS', 'NestJS', 'MongoDB']
         },
         {
-          id: 4,
+          id: 5,
           title: 'Masculine',
           description: 'Application mobile de gestion de rendez-vous et de réservation de services.',
           image: require('@/assets/images/masculine.jpg'),
