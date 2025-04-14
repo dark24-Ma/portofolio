@@ -105,6 +105,15 @@ export default {
       currentSlide: 0,
       filters: ['Tous', 'Web', 'Mobile', 'UI/UX'],
       projects: [
+      {
+          id: 6,
+          title: 'Solana Tracker',
+          description: 'Application web pour suivre les nouveaux tokens sur la blockchain Solana.',
+          image: require('@/assets/images/solana.png'),
+          github: 'http://185.97.146.99:6608/',
+          category: 'Web',
+          technologies: ['Vue.js', 'Tailwind CSS', 'WebSocket', 'Web3', 'Solana']
+        },
         {
           id: 1,
           title: 'DogeChan',
@@ -128,7 +137,7 @@ export default {
           title: 'Consulting Landing Page',
           description: 'Landing page pour un cabinet de conseil en management.',
           image: require('@/assets/images/irama.png'),
-          github: 'https://larma-two.vercel.app/',
+          github: 'https://iramaconsulting.com/',
           category: 'Web',
           technologies: ['Vue.js', 'GSAP']
         },
@@ -150,6 +159,7 @@ export default {
           category: 'Mobile',
           technologies: ['Flutter', 'Firebase', 'API Express', 'MySQL']
         },
+        
        /*  {
           id: 5,
           title: 'Jeu Interactif',
