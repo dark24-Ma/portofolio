@@ -5,6 +5,7 @@
     <Skills />
     <About />
     <Contact />
+    <ChatBot />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import About from './components/About.vue'
 import Skills from './components/Skills.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
+import ChatBot from './components/ChatBot.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     About,
     Skills,
     Projects,
-    Contact
+    Contact,
+    ChatBot
   }
 }
 </script>
@@ -46,12 +49,15 @@ body {
 #app {
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  z-index: 0;
 }
 
 .section {
   padding: 100px 10%;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .section-title {

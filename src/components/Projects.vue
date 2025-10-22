@@ -105,6 +105,24 @@ export default {
       currentSlide: 0,
       filters: ['Tous', 'Web', 'Mobile', 'UI/UX'],
       projects: [
+        {
+          id: 8,
+          title: 'xGateAi',
+          description: "Application web3 de rugCheck des memecoins solana moyennant un abonnement mensuel",
+          image: require('@/assets/images/xgateia.png'),
+          github: 'https://xgateai.io',
+          category: 'Web',
+          technologies: ['Vue.js', 'Blockchain', 'Solana']
+        },
+        {
+          id: 7,
+          title: 'LoungeInAfrica',
+          description: "Application mobile de réservation de lounge dans les aeroports d'Afrique",
+          image: require('@/assets/images/loungeinafrica.png'),
+          github: 'https://play.google.com/store/apps/details?id=com.loungeinafrica.reservation',
+          category: 'Mobile',
+          technologies: ['Flutter']
+        },
       {
           id: 6,
           title: 'Solana Tracker',
@@ -146,7 +164,7 @@ export default {
           title: 'DS Education Dashboard (En cours de développement)',
           description: 'Application Web de gestion de formation PDF, Vidéo, Newsletter, Abonnement .',
           image: require('@/assets/images/education.png'),
-          github: '#',
+          github:'https://dsformations.com/',
           category: 'Web',
           technologies: ['VueJS', 'NestJS', 'MongoDB']
         },
