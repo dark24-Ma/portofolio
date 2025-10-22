@@ -156,7 +156,10 @@ Si on te demande de le contacter, suggère d'utiliser la section contact du port
     }
   },
   mounted() {
+    console.log('✅ Chatbot monté!')
+    
     this.initAnimations()
+    
     // Récupérer la clé API depuis une variable d'environnement ou config
     this.groqApiKey = process.env.VUE_APP_GROQ_API_KEY || ''
     
@@ -166,17 +169,34 @@ Si on te demande de le contacter, suggère d'utiliser la section contact du port
     } else {
       console.warn('⚠️ Chatbot en mode démo (pas de clé API)')
     }
+    
+    // Vérifier que l'élément existe dans le DOM
+    this.$nextTick(() => {
+      const wrapper = document.querySelector('.chatbot-wrapper')
+      const toggle = document.querySelector('.chat-toggle')
+      console.log('Chatbot wrapper trouvé:', !!wrapper)
+      console.log('Bouton toggle trouvé:', !!toggle)
+      if (wrapper) {
+        const styles = window.getComputedStyle(wrapper)
+        console.log('Position:', styles.position, 'Z-Index:', styles.zIndex, 'Display:', styles.display)
+      }
+    })
   },
   methods: {
     initAnimations() {
-      // Animation du bouton flottant - avec une animation d'entrée subtile
+      // S'assurer que le bouton est visible immédiatement
       if (this.$refs.chatToggle) {
-        // Animation d'entrée plus douce
+        // Définir les styles initiaux explicitement
+        gsap.set(this.$refs.chatToggle, {
+          opacity: 1,
+          scale: 1,
+          visibility: 'visible'
+        })
+
+        // Animation d'entrée légère
         gsap.from(this.$refs.chatToggle, {
-          scale: 0.5,
-          opacity: 0,
-          duration: 0.5,
-          delay: 0.3,
+          scale: 0.8,
+          duration: 0.3,
           ease: 'back.out(1.7)'
         })
 
@@ -507,9 +527,11 @@ Si on te demande de le contacter, suggère d'utiliser la section contact du port
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 999999;
+  z-index: 999999 !important;
   font-family: 'Poppins', sans-serif;
   pointer-events: auto;
+  display: block !important;
+  visibility: visible !important;
 }
 
 /* Bouton flottant */
@@ -520,16 +542,17 @@ Si on te demande de le contacter, suggère d'utiliser la section contact du port
   background: linear-gradient(135deg, #00c8ff, #6a5af9);
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 30px rgba(106, 90, 249, 0.4);
   transition: all 0.3s ease;
   overflow: visible;
   /* Assurez-vous que le bouton est visible dès le début */
-  opacity: 1;
-  transform: scale(1);
-  z-index: 1000000;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  z-index: 1000000 !important;
+  visibility: visible !important;
 }
 
 .chat-toggle:hover {
